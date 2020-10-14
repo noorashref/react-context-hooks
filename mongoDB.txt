@@ -1,0 +1,56 @@
+to sell all db 
+shows dbs
+
+to use db 
+use test1(this is db name)
+
+to see table
+show collections
+
+to delete db
+dp.dropDatabase()
+
+to create database
+use acme
+
+to create table
+db.createCollections('table name')
+
+Insert Row
+db.posts.insert({
+  title: 'Post One',
+  body: 'Body of post one',
+  category: 'News',
+  tags: ['news', 'events'],
+  user: {
+    name: 'John Doe',
+    status: 'author'
+  },
+  date: Date()
+})
+
+Insert Multiple Rows
+db.posts.insertMany([
+  {
+    title: 'Post Two',
+    body: 'Body of post two',
+    category: 'Technology',
+    date: Date()
+  },
+  {
+    title: 'Post Three',
+    body: 'Body of post three',
+    category: 'News',
+    date: Date()
+  },
+  {
+    title: 'Post Four',
+    body: 'Body of post three',
+    category: 'Entertainment',
+    date: Date()
+  }
+])
+
+to see all records
+db.posts.find()
+

@@ -1,0 +1,13 @@
+install express
+npm i express
+
+to server continuously
+npm i -D nodemon
+then got o script 
+npm run dev
+
+date and timer
+npm i moment
+
+render templates
+npm i express-handlebars

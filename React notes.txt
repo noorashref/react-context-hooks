@@ -1,0 +1,47 @@
+https://github.com/StephenGrider/redux-code/blob/master/pics/src/api/unsplash.js
+
+download node.js
+
+install react using node
+C:\Users\Noorashref>npm i -g create-react-app
+
+CS code Extensions
+Simple React Snippets
+Prettier - Code formatter
+then enable auto format
+Editor format on save is : True
+
+To create react app
+create-react-app react-app
+
+
+css framework
+https://cdnjs.com/libraries/semantic-ui
+
+fake data
+npm install --save faker
+
+check api geolocation 
+------------------------
+1 startup
+2 whwather
+3 cars
+4 songs
+
+
+
+npm axios is used to create request APi to 3rd party
+npm install --save axios
+
+--------------------------------------------------------------
+Redux
+
+npm install --save redux react-redux
+
+-------------------------------------------------------------
+Hooks
+
+npm i -S react@16.7.0-alpha.2 react-dom@16.7.0-alpha.2
+npm install react@latest react-dom@latest
+
+-------------------------------------------------------------

@@ -1,0 +1,5 @@
+setting up vs code for javascript
+
+extension
+Live Server
+Bracket Pair Colorizer

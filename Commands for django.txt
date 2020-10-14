@@ -1,0 +1,73 @@
+to check certain things 
+in cmd 
+python --version
+pip --version
+django-admin --version
+-------------------------------------------------
+to setup django for particular projects 
+create a virtual enviroment
+in cmd
+create env aloocation
+$pip install virtualenvwrapper-win
+create env folder
+$mkvirtualenv environmentname
+$pip install django
+create directory for projects 
+$mkdir projects
+$cd projects
+-------------------------------------------------
+to create project
+$django-admin startproject projectname
+
+move to the location 
+then
+$python manage.py runserver
+then copy the address paste it to browser
+------------------------------------------------
+open vs code and open project 
+to go the virenv
+$workon envname 
+------------------------------------------------
+
+to create applicatio
+$python manage.py startapp appname
+
+to integrate the created app to project
+open settings.py in project
+under installed apps
+'appname', 
+---------------------------------------------------
+to let django know to collect all satatic files by
+$python manage.py collectstatic
+this will copy all the files to the static folder 
+
+---------------------------------------------------
+db
+postgresql
+admin panel
+pgadmin
+db connect adaptor
+pip install psycopg2
+to handel images
+pip install pillow
+----------------------------------------------
+python manage.py sqlmigrate travello 0001
+BEGIN;
+--
+-- Create model Destination
+--
+CREATE TABLE "travello_destination" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(100) NOT NULL, "img" varchar(100) NOT NULL, "desc" text NOT
+NULL, "offer" boolean NOT NULL);
+COMMIT;
+
+python manage.py migrate 
+to migrate the datas
+--------------------------------------------------
+admin
+put /admin we will get admin page
+then go back to terminal then 
+type
+python manage.py createsuperuser
+to create usename and password for admin page 
+---------------------------------------------------
+

@@ -1,0 +1,89 @@
+
+open project directory in vs code
+and this command
+npm install gh-pages --save-dev
+
+things to add in packgae.json
+
+add to name
+"homepage": "http://noorashref.github.io/firstreacttodoapp",
+add to script 
+"predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+-----------------------------------------------------------------------------
+C:\Users\Noorashref>git --version
+git version 2.28.0.windows.1
+
+C:\Users\Noorashref>git config --global user.name ashref
+
+C:\Users\Noorashref>git config --global user.email noorashref@gmail.com
+
+C:\Users\Noorashref>git config user.name
+ashref
+
+-----------------------------------------------------------------------------
+in terminal run 
+to create repo
+git init 
+then
+git remote add origin https://github.com/noorashref/firstreacttodoapp.git
+
+to look modifiucation
+git status
+
+to save everytrhing
+git add .
+
+to remove from staging area
+git rm --cached 
+
+to commit
+git commit -m "deploy my react app to git hub pages"
+git commit -m "javascript basic upto loops"
+
+to see the commit history
+git log
+to see them in one line
+git log --oneline 
+
+to revert to old code(like to see them on previous commit)
+git checkout 04a37c0
+to come to last commit after seeing some old commit using above command
+git checkout master
+to clear the particular commit
+git revert 04a37c0 (this will take off code from the original code)
+(type like this to come out from screen):wq 
+to take off of the commit from git
+git reset b4b880e (still remains in editor)
+git reset b4b880e --hard
+
+to create new branch
+git branch test-branch
+to see the branch
+git branch -a
+to switch the branch
+git checkout test-branch
+to delete the branch 
+git branch -D test-branch
+to merge the branch to master
+git merge test-branch
+
+open github website and create a repostiory and copy the link and paste it to local repository
+git push https://github.com/noorashref/javascriptnotes.git
+
+to give alise to link so that we cant type each time in terminal
+git remote add origin https://github.com/noorashref/javascriptnotes.git
+git push origin master
+
+git clone https://github.com/noorashref/react-context-hooks.git
+this is for respository created in website
+D:\Programming\projects_react\react-ninja\react-hooks\react-context-hooks>git remote -v
+origin  https://github.com/noorashref/react-context-hooks.git (fetch)
+origin  https://github.com/noorashref/react-context-hooks.git (push)
+
+to deploy
+npm run deploy
+
+to push the code
+git push -u origin master
+------------------------------------------------------

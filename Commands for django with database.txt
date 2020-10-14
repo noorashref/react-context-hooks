@@ -1,0 +1,78 @@
+create a virtual env
+create a new project 
+create a new app
+config app to prg under setting.py
+then create a new template folder
+create a index.html file
+confif template folder to under prg setting.py
+then create a url.py under app
+then config url.py under app to url.py under project
+then render the page in views.py 
+then undre app connect the function under views.py to url.py under app
+then creata a folder name static then copy the javascript,css files from the
+download templates then paste it to the created static folder under project
+
+then we need to tell django to look where all static files are for that 
+under settings.py in prg
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'static')
+]
+then copy files from above folder then paste it to the django folder 
+this is done by code like this
+STATIC_ROOT = os.path.join(BASE_DIR,'assests')
+
+if we want to refere static files then we have to use this
+STATIC_URL = '/static/'
+
+then to create assest folder just run this command
+python manage.py collectstatic
+
+then we have to open html files
+then we have to change all href to django understandale
+top of the html file
+load the static file
+do like this 
+{% static 'styles/styles.css' %}">
+
+if we want to simply change the data us e like 
+this will use in the anyfunction in py file {'price':700}
+this will use in html page {{price}}
+
+then in models in app 
+create a class and declare variables
+
+then in views.py 
+from .models import Shoess 
+just simply import the class
+and create instance for that importated class
+then assign variables
+foot = Shoess()
+    foot.name = 'Addidas'
+    foot.desc = 'Addidas nice and comfort'
+    foot.price = 80
+    return render(req,"index.html",{'foot1':foot})
+
+
+then in html page do like this
+<div class="mname">{{foot1.name}}</div>
+                <div class="desc">{{foot1.desc}}</div>
+                <div class="price">£ {{foot1.price}}</div>
+
+
+next using loop to show 
+{% for showshoe in shoeloop %}
+              <div class="mb-3 pics animation all 1">
+                <img class="img-fluid" src="{% static 'images/irene.jpg' %}" alt="Card image cap">
+                <div class="mname">{{showshoe.name}}</div>
+                <div class="desc">{{showshoe.desc}}</div>
+                <div class="price">£{{showshoe.price}}</div>
+              </div>
+              {% endfor %}
+
+then change the img to the html like this and add some command top of the html
+<img class="img-fluid" src="{% static 'images/{{showshoe.img}}.jpg' %}" alt="Card image cap">
+we cant use jinja inside jinja format so we r addind the below line
+{% static "images" as baseUrl %}
+this baseUrl is variable  we can use 
+then we have remove static from the image and add the varaiable to it like this 
+

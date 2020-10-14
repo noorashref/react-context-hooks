@@ -1,0 +1,22 @@
+create backend and front end folder
+
+->backend
+virtualenv .
+
+go to the env
+then in terminal 
+pip install flask flask-sqlalchemy
+pip install marshmallow marshmallow-sqlalchemy flask-restplus
+flask-cors
+
+
+in python terminal
+from app import db
+exit()
+
+flask run
+---------------------------
+
+go back to backend 
+and do some editings and then 
+npm i axios --save

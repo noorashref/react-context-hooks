@@ -1,0 +1,69 @@
+create project folder
+mkdir project name
+in vs code new trminal 
+$pip3 freeze --- this will show all the installed package globally
+create virtiul env
+$python -m venv ./venv 
+this will create virtual env inside the project folder
+to activate the env
+C:/Users/Noorashref/projects/btre_projects/venv/Scripts/activate.bat
+install django to virtual env
+$pip install django
+$django-admin ---- to see all commands
+to create a project
+$django-admin startproject btre.
+------------------------------------------------
+initial git repository
+$ git init
+then create a file name .gitignore
+and then go to the this website https://www.toptal.com/developers/gitignore
+copy and paste it to created file
+--------------------------------------------
+to create a app
+$python manage.py startapp pages(appname)
+add app to project under settings 
+$pages.apps.PagesConfig
+pages is the app name pagesConfig is the method name from apps.py
+----------------------
+pip install autopep8---- its like a formatter
+-----------------------------------------
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
+STATICFILES_DIR = [
+    os.path.join(BASE_DIR,'btre/static')
+]
+
+run collectstatic 
+--------------------------------------------------------
+makes changes in bootsrap themes
+
+do if else to make the nav bar menu active or not
+do some linking stuff
+create listings app
+create realtors app
+
+-----------------------------------------------------------------
+install postgres
+install pgadmin
+install using pip its a kind of drivers to connect postgres
+pip install psycopg2
+pip install psycopg2-binary
+---------------------------------------------------------------
+then
+pip install pillow for image purpose
+
+python manage.py makemigrations--this will create a temp file under pychace 
+python manage.py sqlmigrate listings 0001-- this will show sql query format
+then put this command to move to postgres db
+python manage.py migrate
+---------------------------------------------------------------
+creating the superusers
+python manage.py createsuperuser
+in app got to admin (basically this speak to django admin)
+create models into the admin 
+-------------------------------------------------------------------
+pip install pylint-django fo r django to recognise the error in listings app
+------------------------------------------------------------------------------
+
+
+
+

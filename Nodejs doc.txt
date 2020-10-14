@@ -1,0 +1,26 @@
+download node js
+open vs code
+install some packages
+Node.js Modules Intellisense
+Node.js Extension Pack
+VS Code for Node.js - Development Pack
+
+
+to create first app
+npm init
+
+to run app
+node filename
+
+5+6
+11
+_+5-->_is previous result
+16
+
+D:.../.../>node filename.js
+
+1ST PRG
+https://github.com/jonasschmedtmann/complete-node-bootcamp
+
+---------------------------------------------------------------------------------------
+Tracersy Media

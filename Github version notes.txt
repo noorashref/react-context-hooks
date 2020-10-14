@@ -1,0 +1,6 @@
+Git version control
+
+Configure the git
+1.Global
+2.Local
+
